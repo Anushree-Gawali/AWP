@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .outer
+        {
+            display:flex;
+            flex-direction: column;
+            
+        }
+        .commentbox{
+            width: 85vw;height:6vh;border-radius:35px;font-size: 24px;
+
+        }
+        .headerstart{
+            padding:10px;
+            display : flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+        }
+        .headerlast {
+            padding:10px;
+            display : flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        .middlebackground{
+            flex:10;height:80vh;
+            background: url("3.png");
+        background-repeat: no-repeat; background-size: cover;
+        background-position: center; 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .footer{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+            flex-direction: row;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a415355d05.js" crossorigin="anonymous"></script>
+    <script src="assignment4.js"></script>
+</head>
+<body>
+    <div style="background:black; height:100vh;">
+        <div class="outer" style = "flex:1; padding:12px; color:black; font-size: 25px;;
+         background: rgb(238, 233, 233);flex-direction: row;">
+            <div class ="headerstart">
+                <div class="headerstart" ><i class="fas fa-user-circle"></i></div>
+                <div class="headerstart" >Anushree</div>
+    
+            </div>
+            <div style ="display:flex;flex:10;"></div>
+            <div class ="headerlast" >
+                <div class="headerlast" ><i class="fas fa-search "></i></div>
+                <div class="headerlast"><i class="fas fa-paperclip"></i></div>
+                <div class="headerlast"  ><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+        </div>
+        <div  id ="chat" class ="middlebackground" >
+            B
+        </div>
+        <div class="outer" style = "background: rgb(238, 233, 233);flex:1;padding:12px; height:10vh;flex-direction: row;">
+            <div  class ="footer" style="flex:1;"><i class="far fa-smile fa-2x"></i></div>
+            <div class ="footer" id="message"  style="flex:10;"><input type="text" name="" id="footer" placeholder=" Type a message" 
+                class="commentbox"/><button id ="id1" onclick="like()">
+                    Like
+                </button> </div>
+            <div  class ="footer" onclick="message()" style="flex:1; justify-content: flex-end;"><i class="fas fa-microphone fa-2x"></i></div>
+        </div>
+    </div>
+</body>
+</html>
